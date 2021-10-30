@@ -1,0 +1,30 @@
+@php
+  $lista = [
+    null => 'UF',
+    'AC' => 'AC',
+    'AL' => 'AL',
+    'AP' => 'AP',
+    'AM' => 'AM',
+    'BA' => 'BA',
+    'CE' => 'CE',
+    'DF' => 'DF',
+    'ES' => 'ES',
+    'GO' => 'GO',
+    'MA' => 'MA',
+    'MT' => 'MT',
+    'MG' => 'MG',
+    'PA' => 'PA',
+    'PB' => 'PB',
+    'PR' => 'PR',
+    'PI' => 'PI',
+    'RJ' => 'RJ',
+    'RN' => 'RN',
+    'RS' => 'RS',
+    'RO' => 'RO',
+    'SC' => 'SC',
+    'SP' => 'SP',
+    'SE' => 'SE',
+    'TO' => 'TO',
+  ]
+@endphp
+{!! Form::select('uf', $lista, $item->uf ?? null, ['class' => 'form-control disabled uf']) !!}
